@@ -5,35 +5,35 @@
 <Modal @ref="modalRef">
     <ModalContent Centered>
         <ModalHeader>
-            <ModalTitle>Employee edit</ModalTitle>
+            <ModalTitle>Регистрация</ModalTitle>
             <CloseButton />
         </ModalHeader>
         <ModalBody>
             <Field>
-                <FieldLabel>Fullname</FieldLabel>
-                <TextEdit @bind-Text="@fullname" Placeholder="Enter fullname..." />
+                <FieldLabel>Имя</FieldLabel>
+                <TextEdit @bind-Text="@fullname" Placeholder="Фродо" />
             </Field>
             <Field>
-                <FieldLabel>Phone</FieldLabel>
-                <TextEdit @bind-Text="@phone" Placeholder="Enter phone..." />
+                <FieldLabel>Номер телефона</FieldLabel>
+                <TextEdit @bind-Text="@phone" Placeholder="Беггинс" />
             </Field>
             <Field>
-                <FieldLabel>Email</FieldLabel>
-                <TextEdit @bind-Text="@email" Placeholder="Enter email..." />
+                <FieldLabel>Почта</FieldLabel>
+                <TextEdit @bind-Text="@email" Placeholder="frodo@example.com" />
             </Field>
             <Field>
-                <FieldLabel>Password</FieldLabel>
-                <TextEdit @bind-Text="@password" Placeholder="Enter password..." />
+                <FieldLabel>Пароль</FieldLabel>
+                <TextEdit @bind-Text="@password" Placeholder="123456f" />
             </Field>
             <Field>
-                <FieldLabel>Confirm password</FieldLabel>
-                <TextEdit @bind-Text="@confirmPassword" Placeholder="Enter password again..." />
+                <FieldLabel>Подтвердить пароль</FieldLabel>
+                <TextEdit @bind-Text="@confirmPassword" Placeholder="123456f" />
             </Field>
             <p>@message</p>
         </ModalBody>
         <ModalFooter>
-            <Button Color="Color.Secondary" Clicked="@HideModal">Close</Button>
-            <Button Color="Color.Primary" Clicked="@Register">Save Changes</Button>
+            <Button Color="Color.Secondary" Clicked="@HideModal">Закрыть</Button>
+            <Button Color="Color.Primary" Clicked="@Register">Зарегистрироваться</Button>
         </ModalFooter>
     </ModalContent>
 </Modal>
